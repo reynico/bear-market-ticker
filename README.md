@@ -57,6 +57,12 @@ The OLED display is connected to the ESP-01 using an i2c connection, hence `SDA`
 
 ![ESP-01 run mode](run_mode.png)
 
+## 3D printed case
+
+I've included two stl files to build a case for the ticker. The Oled screen needs to be glued and pieces have a groove to snap fit between.
+- [Back](ticker_back.stl)
+- [Front](ticker_front.stl)
+
 ## Finished ticker pictures
 
 ![Bitcoin and Ethereum ticker](eth_btc_ticker.jpg)
@@ -64,3 +70,5 @@ The OLED display is connected to the ESP-01 using an i2c connection, hence `SDA`
 ![Soldering the AMS1117](voltage_regulator.jpg)
 
 ![Soldering the display](solder.jpg)
+
+![3D printed case](3d_printed_case.jpg)
