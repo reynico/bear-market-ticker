@@ -17,6 +17,7 @@ ESP8266 based Bitcoin ([and many other cryptocurrencies](https://www.bitstamp.ne
 - [ESP8266 Arduino core](https://github.com/esp8266/Arduino)
 - [ArduinoJson library](https://arduinojson.org/) - Install it using the library manager
 - [Adafruit_SSD1306 library](https://github.com/adafruit/Adafruit_SSD1306) - Install it using the library manager
+- [WifiManager library](https://github.com/tzapu/WiFiManager) - Install it using the library manager
 
 ## Programming the ESP-01
 
