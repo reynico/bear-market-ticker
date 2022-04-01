@@ -31,22 +31,19 @@ This way the ESP-01 can be programmed from the Arduino IDE. Don't forget to set 
 
 ### Setting up the WiFi connection
 
-The ESP-01 has a WiFi transceiver embedded. Configure your wifi network name and password:
+The ESP-01 has a WiFi transceiver embedded. The WifiManager library brings up an access point where you can connect to and then configure your local wifi network. These are the default ssid and password for the AP mode, they're also shown on the Oled screen.
 
-```c
-const char* ssid     = "your-wifi-ssid";
-const char* password = "your-wifi-password";
+```
+ssid: ticker
+pass: notsatoshi
 ```
 
-and you'll be good to go!
+If you need to reset the configuration to connect to a different wifi network, power up the ticker and then press and hold the reset button for 3 seconds.
 
 ### Setting up other currencies
 
-Take a look to the [Bitstamp ticker api](https://www.bitstamp.net/api/#ticker), choose a ticker pair and set it up on `bitstamp_uri`.
+Take a look to the [Bitstamp ticker api](https://www.bitstamp.net/api/#ticker) then open a browser pointing to the IP address of your ticker, the IP address is shown during startup on the Oled screen.
 
-```c
-const String bitstamp_uri = "/api/v2/ticker/btcusd/";
-```
 
 ## Debugging the ticker
 
