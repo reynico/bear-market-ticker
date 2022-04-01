@@ -14,9 +14,6 @@ const int screen_width = 128;
 
 const char *bitstamp_host = "www.bitstamp.net";
 const String bitstamp_uri = "/api/v2/ticker/btcusd/";
-//const String bitstamp_uri = "/api/v2/ticker/ethusd/";
-
-const char bitstamp_fingerprint[] PROGMEM = "6E 1B 38 B4 E4 E1 55 56 2D 16 28 85 6D A1 9D CC 0F 89 0A 8A";
 
 int16_t x, y;
 uint16_t textWidth, textHeight;
@@ -68,7 +65,7 @@ void setup() {
 WiFiClientSecure client;
 
 void loop() {
-  client.setFingerprint(bitstamp_fingerprint);
+  client.setInsecure();
   client.connect(bitstamp_host, 443);
 
   client.println("GET " + bitstamp_uri + " HTTP/1.0");
